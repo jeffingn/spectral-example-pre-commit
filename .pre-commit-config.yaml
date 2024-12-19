@@ -1,5 +1,8 @@
 repos:
--   repo: https://github.com/spectralops/spectral-pre-commit
-    rev: master
+-   repo: local
     hooks:
     - id: spectral
+      name: Spectral Scan
+      entry: <relative path from repo root to “spectral.sh”>
+      language: script
+    
